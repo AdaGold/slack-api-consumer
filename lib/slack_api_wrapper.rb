@@ -20,7 +20,7 @@ class SlackApiWrapper
 
     url = BASE_URL + "chat.postMessage?" + "token=#{token}"
 
-    data = HTTParty.post(url,
+    response = HTTParty.post(url,
     body:  {
       "text" => "#{msg}",
       "channel" => "#{channel}",
@@ -29,5 +29,6 @@ class SlackApiWrapper
       "as_user" => "false"
     },
     :headers => { 'Content-Type' => 'application/x-www-form-urlencoded' })
+    return response.success?
   end
 end
