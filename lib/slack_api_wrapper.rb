@@ -14,11 +14,10 @@ class SlackApiWrapper
     end
   end
 
-  def self.send_msg(channel, msg, token = nil)
-    token = TOKEN if token == nil
+  def self.send_msg(channel, msg)
     puts "Sending message to channel #{channel}: #{msg}"
 
-    url = BASE_URL + "chat.postMessage?" + "token=#{token}"
+    url = BASE_URL + "chat.postMessage?" + "token=#{TOKEN}"
 
     response = HTTParty.post(url,
     body:  {
