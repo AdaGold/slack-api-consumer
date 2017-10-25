@@ -1,24 +1,11 @@
-# README
+# Slack API LiveCode
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This starter code has the starter code for a demo of using the Slack API.  There are two branches which demonstrate using Post requests & Get requests.  
 
-Things you may want to cover:
+## Learning Goals
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+This project is designed to help students learn to:
+- Query an existing API (Slack API) in a Rails Web App
+- Create library classes & wrappers to interact with the API.
+- Use HTTParty to query an API.
+- Use VCR to test a Rails API App
