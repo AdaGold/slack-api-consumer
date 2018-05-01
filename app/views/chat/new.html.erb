@@ -1,6 +1,6 @@
 <h1>Send Message to <span class="channel-name"> <%= @channel %></span> </h1>
 
-<%= form_tag chat_create_path(@channel), method: "post" do %>
+<%= form_tag chat_create_path, method: "post" do %>
   <%= label_tag(:message, "Enter Message") %>
   <%= text_field_tag(:message) %>
   <%= submit_tag("Send") %>
