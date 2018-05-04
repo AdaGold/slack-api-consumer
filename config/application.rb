@@ -19,6 +19,6 @@ module SlackAPI
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
     # Automatically load all code from <rails_root>/lib
-    config.autoload_paths << Rails.root.join('lib')
+    config.eager_load_paths << Rails.root.join('lib')
   end
 end
